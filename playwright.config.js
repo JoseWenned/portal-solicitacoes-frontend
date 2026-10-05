@@ -26,5 +26,12 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
       },
     },
+    {
+      name: 'chromium-mobile',
+      use: {
+        ...devices['Pixel 7'],
+        defaultBrowserType: 'chromium',
+      },
+    },
   ],
 });
