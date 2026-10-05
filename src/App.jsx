@@ -1,8 +1,14 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
 import { AuthProvider } from './presentation/context/AuthProvider';
+import PortalLayout from './presentation/components/PortalLayout';
 import AuthPage from './presentation/pages/AuthPage';
-import HomePage from './presentation/pages/HomePage';
+import DashboardPage from './presentation/pages/DashboardPage';
+import SolicitacoesPage from './presentation/pages/SolicitacoesPage';
+import SolicitacaoFormPage from './presentation/pages/SolicitacaoFormPage';
+import SolicitacaoDetalhePage from './presentation/pages/SolicitacaoDetalhePage';
 import ProtectedRoute from './presentation/routes/ProtectedRoute';
+
 import './presentation/styles/global.scss';
 
 export default function App() {
@@ -17,7 +23,22 @@ export default function App() {
           />
 
           <Route element={<ProtectedRoute />}>
-            <Route path="/" element={<HomePage />} />
+            <Route element={<PortalLayout />}>
+              <Route path="/" element={<DashboardPage />} />
+              <Route path="/solicitacoes" element={<SolicitacoesPage />} />
+              <Route
+                path="/solicitacoes/nova"
+                element={<SolicitacaoFormPage key="nova" />}
+              />
+              <Route
+                path="/solicitacoes/:id"
+                element={<SolicitacaoDetalhePage />}
+              />
+              <Route
+                path="/solicitacoes/:id/editar"
+                element={<SolicitacaoFormPage key="editar" />}
+              />
+            </Route>
           </Route>
 
           <Route path="*" element={<Navigate to="/" replace />} />
