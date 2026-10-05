@@ -16,6 +16,16 @@
 - Docker, CI e documentação desde a primeira etapa.
 - Organização por camadas.
 
+## Validação manual
+
+- Proxy do Vite: endpoint CSRF retornou HTTP 200.
+- Cadastro pelo formulário: aprovado.
+- Login: aprovado.
+- Restauração da sessão após atualizar a página: aprovada.
+- Logout com retorno ao login: aprovado.
+
+Resultados informados pelo desenvolvedor.
+
 ## Validação
 
 - Docker: build e inicialização aprovados.

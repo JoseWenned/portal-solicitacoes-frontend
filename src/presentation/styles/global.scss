@@ -75,3 +75,156 @@ textarea {
   padding-top: 20px;
   border-top: 1px solid #e1e8f2;
 }
+
+a {
+  color: #2563eb;
+}
+
+.brand {
+  color: #17243b;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.auth-page,
+.loading-page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  padding: clamp(24px, 5vw, 40px);
+  background: #fff;
+  border: 1px solid #e1e8f2;
+  border-radius: 20px;
+  box-shadow: 0 16px 48px rgb(23 36 59 / 6%);
+
+  .brand {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    margin: 12px 0;
+    font-size: 30px;
+    letter-spacing: -0.04em;
+  }
+
+  p {
+    color: #526179;
+    line-height: 1.6;
+  }
+
+  form {
+    display: grid;
+    gap: 18px;
+    margin-top: 24px;
+  }
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+
+  label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+    color: #17243b;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    &[aria-invalid='true'] {
+      border-color: #dc2626;
+    }
+  }
+
+  small {
+    color: #b91c1c;
+    line-height: 1.4;
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  &.primary {
+    color: #fff;
+    background: #2563eb;
+  }
+
+  &.secondary {
+    color: #17243b;
+    background: #fff;
+    border-color: #cbd5e1;
+  }
+}
+
+.alert {
+  padding: 12px 14px;
+  margin: 16px 0;
+  border-radius: 9px;
+  line-height: 1.5;
+
+  &.error {
+    color: #991b1b;
+    background: #fef2f2;
+  }
+
+  &.success {
+    color: #166534;
+    background: #f0fdf4;
+  }
+}
+
+.auth-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.portal-shell {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.portal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.content-card {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e1e8f2;
+  border-radius: 16px;
+}
