@@ -4,3 +4,10 @@ services:
       context: .
     ports:
       - "127.0.0.1:3000:8080"
+    networks:
+      - backend_network
+
+networks:
+  backend_network:
+    external: true
+    name: ${BACKEND_NETWORK:-portal-solicitacoes-backend_default}
