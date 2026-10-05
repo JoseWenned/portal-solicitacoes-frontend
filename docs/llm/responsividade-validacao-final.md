@@ -10,4 +10,5 @@
 
 - Fluxo integrado desktop: três execuções consecutivas aprovadas.
 - Fluxo integrado com emulação móvel: uma execução aprovada.
-- Conferência visual: pendente.
+- Revisão visual manual em desktop e largura de 390 px:
+- concluída com sucesso pelo desenvolvedor, sem problemas identificados.

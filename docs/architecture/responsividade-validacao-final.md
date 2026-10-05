@@ -26,5 +26,5 @@ Os resultados foram informados pelo desenvolvedor.
 
 - Emulação móvel não equivale a teste em aparelho físico.
 - O teste funcional não comprova toda a qualidade visual.
-- Conferência visual de login, dashboard, filtros, formulário
-  e detalhes: pendente.
+- Revisão visual manual em desktop e largura de 390 px:
+- concluída com sucesso pelo desenvolvedor, sem problemas identificados.

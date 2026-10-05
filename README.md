@@ -661,7 +661,5 @@ e será atualizado com as decisões e evidências do frontend.
 
 ## Pendências de preparação da entrega
 
-- Conferência visual específica da responsividade.
-- Consolidação final do Memorial Técnico.
-- Atualização do README do backend com a integração realizada.
-- Confirmação dos resultados finais da CI.
+Revisão visual manual em desktop e largura de 390 px:
+concluída com sucesso pelo desenvolvedor, sem problemas identificados.
