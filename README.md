@@ -659,7 +659,50 @@ npm ci --include=dev
 O Memorial Técnico está centralizado no backend
 e será atualizado com as decisões e evidências do frontend.
 
-## Pendências de preparação da entrega
+## Conta de demonstração
 
-Revisão visual manual em desktop e largura de 390 px:
-concluída com sucesso pelo desenvolvedor, sem problemas identificados.
+Não há usuário criado automaticamente pelas migrations.
+
+Após iniciar backend e frontend, acesse:
+
+http://localhost:3000/cadastro
+
+Crie uma conta com os seguintes dados exclusivamente de demonstração:
+
+Exemplo:
+
+| Campo | Valor |
+|---|---|
+| Nome | Ana Demonstração |
+| E-mail | ana.demo@example.com |
+| Senha | Teste12345! |
+
+Depois, acesse http://localhost:3000/login e utilize
+o e-mail e a senha cadastrados.
+
+Se essa conta já tiver sido criada no seu banco local,
+utilize as credenciais correspondentes. Caso tenha sido criada
+com outra senha, cadastre uma nova conta com outro e-mail.
+
+Cada usuário visualiza somente suas próprias solicitações.
+
+## Evidências de funcionamento
+
+Capturas realizadas no ambiente local integrado,
+com frontend, backend e PostgreSQL executados pelo Docker Compose.
+
+### Dashboard
+
+![Dashboard com indicadores por status](docs/evidencias/tela-dashboard-desktop.png)
+
+### Listagem com filtros
+
+![Listagem filtrada por categoria TI e status Aberto](docs/evidencias/tela-filtro-solicitacoes-desktop.png)
+
+### Detalhes da solicitação
+
+![Detalhes de uma solicitação aberta](docs/evidencias/tela-destalhes-solicitacoes-desktop.png)
+
+Os registros apresentados pertencem à conta de demonstração
+utilizada nas capturas. As imagens não representam dados
+inseridos automaticamente em uma instalação nova.
